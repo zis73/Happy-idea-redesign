@@ -468,10 +468,12 @@ body p {
 }
 
 .clients-wrapper {
+  margin-top: 20px;
   margin-left: 10%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .clients-title h2 {
@@ -482,9 +484,17 @@ body p {
 }
 
 .clients-logo {
-  margin-right: 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
   width: 200px;
-  height: 150px;
+  height: 160px;
+}
+
+.clients-logo img {
+  max-width: 70%;
+  max-height: 130px;
 }
 
 .company-wrapper {
@@ -536,9 +546,13 @@ body p {
   margin: 10px;
 }
 
+.header a:hover {
+  color: red;
+}
+
 .hello {
   height: 100vh;
-  background-image: url("/img/fon/hello.png");
+  background-image: url("../img/fon/hello.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -620,15 +634,68 @@ body p {
 .services-card h3 {
   font-size: 18px;
   font-weight: bold;
+  text-align: center;
+}
+
+.services-card:hover {
+  border: 1px solid red;
+}
+
+.service-radio {
+  margin-left: 10%;
+}
+
+.service-radio h2 {
+  display: table;
+  border-bottom: 4px solid red;
+}
+
+.service-radio-wrapper {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-radio-wrapper ul li {
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-radio-img {
+  width: 50%;
+}
+
+.service-radio-img img {
+  width: 442px;
+  height: 370px;
+}
+
+p {
+  margin: 20px;
+  text-align: center;
 }
 
 .radio-logo-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  max-width: 900px;
+  margin: 20px auto;
 }
 
-.radio-logo-wrapper img {
+.radio-logo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
   width: 200px;
+  height: 160px;
+}
+
+.radio-logo img {
+  max-width: 90%;
+  max-height: 130px;
 }
 /*# sourceMappingURL=style.css.map */

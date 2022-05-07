@@ -28,10 +28,44 @@
     h3
       font-size: 18px
       font-weight: bold
-  &-radio
+      text-align: center
+  &-card:hover
+    border: 1px solid red
+.service-radio
+  margin-left: 10%
+  h2
+    display: table
+    border-bottom: 4px solid red 
+.service-radio-wrapper
+  margin-top: 5%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  ul
+    li
+      +lato(20px)
+      margin-bottom: 10px
+.service-radio-img
+  width: 50%
+  img
+    width: 442px
+    height: 370px
+p
+  margin: 20px
+  text-align: center
 .radio-logo-wrapper
   display: flex
   justify-content: space-between
   flex-wrap: wrap
+  max-width: 900px 
+  margin: 20px auto 
+.radio-logo
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  align-items: center
+  width: 200px
+  height: 160px
   img
-    width: 200px
+    max-width: 90%
+    max-height: 130px
