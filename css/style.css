@@ -349,6 +349,8 @@ body h2 {
   font-family: Montserrat, sans-serif;
   font-size: 48px;
   font-weight: bold;
+  margin-bottom: 50px;
+  margin-left: 10%;
 }
 
 body h3 {
@@ -467,6 +469,11 @@ body p {
   font-style: normal;
 }
 
+.adv h2 {
+  display: table;
+  border-bottom: 4px solid red;
+}
+
 .clients-wrapper {
   margin-top: 20px;
   margin-left: 10%;
@@ -480,7 +487,6 @@ body p {
   margin-left: 10%;
   display: table;
   border-bottom: 4px solid red;
-  margin-bottom: 40px;
 }
 
 .clients-logo {
@@ -517,6 +523,28 @@ body p {
 
 .company-info img {
   width: 700px;
+}
+
+.contacts-wrapper {
+  width: 100%;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+}
+
+.contacts-form {
+  width: 100%;
+  background-color: #000;
+}
+
+.contacts-form h2 {
+  display: table;
+  border-bottom: 4px solid red;
+  margin: 20px 0 20px 20px;
+}
+
+.contacts-form h3 {
+  margin: 20px 0 20px 20px;
 }
 
 .header {
@@ -596,10 +624,6 @@ body p {
   color: #fff;
 }
 
-.services-title {
-  margin-left: 10%;
-}
-
 .services-title h2 {
   display: table;
   border-bottom: 4px solid red;
@@ -615,7 +639,7 @@ body p {
   flex-wrap: wrap;
   max-width: 1000px;
   align-item: center;
-  margin: 50px auto;
+  margin: 0 auto;
 }
 
 .services-card {
@@ -641,40 +665,38 @@ body p {
   border: 1px solid red;
 }
 
-.service-radio {
-  margin-left: 10%;
-}
-
 .service-radio h2 {
   display: table;
+  text-align: left;
   border-bottom: 4px solid red;
 }
 
 .service-radio-wrapper {
+  margin-left: 10%;
   margin-top: 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.service-radio-wrapper ul li {
+.service-radio-img img {
+  max-width: 442px;
+  max-height: 370px;
+}
+
+.service-radio-ul {
+  width: 60%;
+}
+
+.service-radio-ul ul li {
   font-family: Lato, sans-serif;
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.service-radio-img {
-  width: 50%;
-}
-
-.service-radio-img img {
-  width: 442px;
-  height: 370px;
-}
-
 p {
   margin: 20px;
-  text-align: center;
 }
 
 .radio-logo-wrapper {

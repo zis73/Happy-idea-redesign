@@ -3,7 +3,7 @@
   width: 100%
   color: #fff
   &-title
-    margin-left: 10%
+    // margin-left: 10%
     h2
       display: table
       border-bottom: 4px solid red
@@ -15,7 +15,7 @@
     flex-wrap: wrap
     max-width: 1000px
     align-item: center
-    margin: 50px auto
+    margin: 0 auto
   &-card
     border: 1px solid #fff
     margin: 20px
@@ -32,27 +32,29 @@
   &-card:hover
     border: 1px solid red
 .service-radio
-  margin-left: 10%
   h2
     display: table
+    text-align: left
     border-bottom: 4px solid red 
 .service-radio-wrapper
+  margin-left: 10%
   margin-top: 5%
   display: flex
   align-items: center
   justify-content: space-between
+  flex-wrap: wrap
+.service-radio-img
+  img
+    max-width: 442px
+    max-height: 370px
+.service-radio-ul
+  width: 60%
   ul
     li
       +lato(20px)
       margin-bottom: 10px
-.service-radio-img
-  width: 50%
-  img
-    width: 442px
-    height: 370px
 p
   margin: 20px
-  text-align: center
 .radio-logo-wrapper
   display: flex
   justify-content: space-between

@@ -17,10 +17,10 @@
         <!-- /.header-logo -->
         <nav class="header-nav">
           <ul>
-            <li><a href="#">УСЛУГИ</a></li>
+            <li><a href="#service">УСЛУГИ</a></li>
             <li><a href="#">РЕКЛАМА</a></li>
-            <li><a href="#">О НАС</a></li>
-            <li><a href="#">КОНТАКТЫ</a></li>
+            <li><a href="#company">О НАС</a></li>
+            <li><a href="#contacts">КОНТАКТЫ</a></li>
           </ul>
         </nav>
         <!-- /.header-nav -->
@@ -53,7 +53,7 @@
   <div class="services">
     <div class="container">
       <div class="services-title">
-        <h2>Мы предлагаем</h2>
+        <h2><a name="service">Мы предлагаем</a></h2>
       </div>
       <!-- /.services-title -->
       <div class="services-wrapper">
@@ -115,25 +115,28 @@
   </div>
   <div class="service-radio">
     <div class="container">
-    <h2>Реклама на Радио</h2>
-    <div class="service-radio-wrapper">
-      <div class="service-radio-img">
-        <img src="img/icons/radio-antenna.png" alt="">
-      </div>
-      <!-- /.service-radio-img -->
-      <ul>
-        <li>Радио является одним из самых популярных, ненавязчивых и приятных СМИ. 
-          Реклама на радио по праву считается одной из самых эффективных рекламных площадок и пользуется большой популярностью среди предпринимателей.</li>
-        <li>Широкий охват аудитории.</li>
-        <li>По массовости радиореклама уступает только телевизионной рекламе.</li>
-        <li>Каждый рекламодатель имеет возможность выбрать время и обстоятельства, при которых будет транслироваться его сообщения.</li>
-      </ul>
+      <h2>Реклама на Радио</h2>
+      <div class="service-radio-wrapper">
+        <div class="service-radio-img">
+          <img src="img/icons/radio.png" alt="">
+        </div>
+        <!-- /.service-radio-img -->
+        <div class="service-radio-ul">
+          <ul>
+            <li>Радио является одним из самых популярных, ненавязчивых и приятных СМИ. 
+              Реклама на радио по праву считается одной из самых эффективных рекламных площадок и пользуется большой популярностью среди предпринимателей.</li>
+            <li>Широкий охват аудитории.</li>
+            <li>По массовости радиореклама уступает только телевизионной рекламе.</li>
+            <li>Каждый рекламодатель имеет возможность выбрать время и обстоятельства, при которых будет транслироваться его сообщения.</li>
+          </ul>
+        </div>
+      <!-- /.service-radio-ul -->
     </div>
     <!-- /.service-radio-wrapper -->
     <p>
       Наша компания <b>дает возможность вам и вашему бизнесу прозвучать в эфирах центральных радиостанций страны.</b>
       </p>
-    <h2>Мы сотрудничаем:</h2>
+    <h2>Радио:</h2>
     <div class="radio-logo-wrapper">
       <div class="radio-logo"><img src="img/radio/EuropaPlus.png" alt=""></div>
       <div class="radio-logo"><img src="img/radio/7.png" alt=""></div>
@@ -144,14 +147,14 @@
       <div class="radio-logo"><img src="img/radio/rrd-logo-full.svg" alt=""></div>
     </div>
     <!-- /.radio-logo-wrapper -->
-  </div>
-  <!-- /.container -->
+    </>
   </div>
   <!-- /.service-radio -->
-  <!-- /.services -->
   <div class="adv">
     <div class="container">
-      <div class="adv-title"></div>
+      <div class="adv-title">
+        <h2>Наши работы:</h2>
+      </div>
       <!-- /.adv-title -->
       <div class="adv-wrapper">
         <adv class="abilities"></adv>
@@ -165,11 +168,11 @@
   </div>
   <div class="company">
     <div class="container">
+      <div class="company-title">
+        <h2><a name="company">О нас</a></h2>
+      </div>
+      <!-- /.company-title -->
       <div class="company-wrapper">
-        <div class="company-title">
-          <h2>О нас</h2>
-        </div>
-        <!-- /.company-title -->
         <div class="company-info">
           <div class="company-desc">
             <h3>Наша Компания не первый год профессионально занимается продвижением бизнеса, оперативным и эффективным информированием потенциальных Клиентов по средствам современных рекламных технологий в Московской области.</h3>
@@ -227,7 +230,20 @@
     <!-- /.container -->
   </div>
   <!-- /.clients -->
-  <div class="contacts"></div>
+  <div class="contacts">
+    <div class="contacts-wrapper">
+      <div class="contacts-map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af9a71db5c7396b25b4d99b6f3996213772e6ebdbe38b28be5aabde190c5da5b5&amp;width=680&amp;height=521&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+      <!-- /.contacts-map -->
+      <div class="contacts-form">
+        <h2><a name="contacts">Заявка</a></h2>
+        <h3>Оставьте заявку и мы с вами свяжемся</h3>
+      </div>
+      <!-- /.contacts-form -->
+    </div>
+    <!-- /.contacts-wrapper -->
+  </div>
   <!-- /.contacts -->
 </body>
 </html>
