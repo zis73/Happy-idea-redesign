@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Happy Idea - Рекламное агенство</title>
   <link rel="stylesheet" href="css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
 </head>
 <body>
   <header class="header">
@@ -18,7 +22,6 @@
         <nav class="header-nav">
           <ul>
             <li><a href="#service">УСЛУГИ</a></li>
-            <li><a href="#">РЕКЛАМА</a></li>
             <li><a href="#company">О НАС</a></li>
             <li><a href="#contacts">КОНТАКТЫ</a></li>
           </ul>
@@ -39,8 +42,8 @@
         <h2 class="hello-desc">Крупнейшийй игрок <br> в Московской области</h2>
         <!-- /.hello-desc -->
         <div class="hello-buttons">
-        <button class="hello-button">ОСТАВИТЬ ЗАЯВКУ</button>
-        <button class="hello-button">ПОЗВОНИТЬ НАМ</button>
+        <a href="#contacts"><button class="hello-button">ОСТАВИТЬ ЗАЯВКУ</button></a>
+        <a href="tel:+79772739505"><button class="hello-button">ПОЗВОНИТЬ НАМ</button></a>
         <!-- /.hello-button -->
         </div>
         <!-- /.hello-buttons -->
@@ -150,17 +153,93 @@
     </>
   </div>
   <!-- /.service-radio -->
-  <div class="adv">
+  <div class="works">
     <div class="container">
-      <div class="adv-title">
+      <div class="works-title">
         <h2>Наши работы:</h2>
       </div>
       <!-- /.adv-title -->
-      <div class="adv-wrapper">
-        <adv class="abilities"></adv>
-        <!-- /.abilities -->
-        <div class="adv-desc"></div>
-        <!-- /.adv-desc -->
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="img/exp/elevator/1.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/elevator/2.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/elevator/3.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/okleyka/0.JPG">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/okleyka/1.JPG">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/okleyka/2.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/okleyka/3.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/okleyka/4.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/okleyka/5.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/okleyka/6.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/okleyka/7.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/okleyka/8.jpeg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/okleyka/9.jpeg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/podgolovniki/1.JPG">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/podgolovniki/2.jpeg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/podgolovniki/3.JPG">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/podgolovniki/4.JPG">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/podgolovniki/5.JPG">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/polygraphy/1.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/polygraphy/2.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/polygraphy/7.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/polygraphy/8.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/polygraphy/9.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/exp/polygraphy/11.jpg">
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
       <!-- /.adv-wrapper -->
     </div>
@@ -175,15 +254,19 @@
       <div class="company-wrapper">
         <div class="company-info">
           <div class="company-desc">
-            <h3>Наша Компания не первый год профессионально занимается продвижением бизнеса, оперативным и эффективным информированием потенциальных Клиентов по средствам современных рекламных технологий в Московской области.</h3>
-            <p>Вкусная подача и качественное исполнение рекламного продукта под Вас-наша основная задача! Интересные предложения по размещению Вашего бизнеса в общественном пригородном транспорте, на радио, телевидении и в широкой офлайн среде.
-            <br>
-            Приглашаем Вас к сотрудничеству на взаимовыгодных условиях по демократичным ценам.
-            <br>
-            О Вас узнают, услышат и обязательно запомнят!</p>
+            <h3>Наша компания не первый год профессионально занимается продвижением бизнеса, оперативным и эффективным информированием потенциальных Клиентов по средствам современных рекламных технологий в Московской области.</h3>
+            <div class="company-logo">
+              <img src="img/logo/logo_header.png" alt="logo:Happy-Idea">
+            </div>
+            <!-- /.company-logo -->
+            <p>Вкусная подача и качественное исполнение рекламного продукта под вас-наша основная задача! Интересные предложения по размещению вашего бизнеса в общественном пригородном транспорте, на радио, телевидении и в широкой офлайн среде.</p>
+            
+            <p>Приглашаем вас к сотрудничеству на взаимовыгодных условиях по демократичным ценам.
+            </p>
+            <p>О вас узнают, услышат и обязательно запомнят!</p>
           </div>
             <!-- /.company-desc -->
-          <img src="img/logo/logo_header.png" alt="logo:Happy-Idea">
+            
         </div>
         <!-- /.company-desc -->
       </div>
@@ -239,11 +322,25 @@
       <div class="contacts-form">
         <h2><a name="contacts">Заявка</a></h2>
         <h3>Оставьте заявку и мы с вами свяжемся</h3>
+        <form action="#">
+          <p><i>Пожалуйста, заполните форму. Обязательные поля помечены </i><em>*</em></p>
+          <fieldset>
+              <label for="name">Имя <em>*</em></label>
+              <input id="name" placeholder="Иван Иванов" autofocus required><br>
+              <label for="telephone" >Телефон</label>
+              <input id="telephone" placeholder="+7 (xxx) xxx-xxxx" required ><br>
+              <label for="email">Email <em>*</em></label>
+              <input id="email" placeholder="ivanon@gmail.com" required pattern="\S+@[a-z]+.[a-z]+"><br>
+          </fieldset>
+          <p><input type="submit" value="Отправить информацию"></p>
+          </form>
       </div>
       <!-- /.contacts-form -->
     </div>
     <!-- /.contacts-wrapper -->
   </div>
   <!-- /.contacts -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 </html>
