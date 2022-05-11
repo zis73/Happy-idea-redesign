@@ -469,9 +469,33 @@ body p {
   font-style: normal;
 }
 
-.adv h2 {
+.works h2 {
   display: table;
   border-bottom: 4px solid red;
+}
+
+.swiper {
+  width: 600px;
+  height: 700px;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  padding: 10px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.swiper-swiper-button-prev {
+  margin: -50px;
 }
 
 .clients-wrapper {
@@ -503,6 +527,11 @@ body p {
   max-height: 130px;
 }
 
+.company {
+  background-color: #000;
+  color: #fff;
+}
+
 .company-wrapper {
   margin-left: 10%;
 }
@@ -516,13 +545,12 @@ body p {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin: 24px;
-  padding: 10px;
   align-items: center;
 }
 
-.company-info img {
-  width: 700px;
+.company-logo {
+  max-width: 700px;
+  margin: 20px auto;
 }
 
 .contacts-wrapper {
@@ -537,6 +565,13 @@ body p {
   background-color: #000;
 }
 
+.contacts-form label {
+  padding-left: 40px;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .contacts-form h2 {
   display: table;
   border-bottom: 4px solid red;
@@ -545,6 +580,29 @@ body p {
 
 .contacts-form h3 {
   margin: 20px 0 20px 20px;
+}
+
+.contacts-form input {
+  margin-bottom: 10px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.contacts-form input:required:invalid {
+  border: 1px solid red;
+}
+
+input[type=submit] {
+  margin-top: 20px;
+  margin-right: 25px;
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  border: 3px solid Black;
+  border-radius: 50px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-color: #fff;
 }
 
 .header {
