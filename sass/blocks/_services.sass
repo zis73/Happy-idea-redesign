@@ -8,20 +8,30 @@
       display: table
       border-bottom: 4px solid red
   &-wrapper
-    margin-left: 10%
+    // margin-left: 10%
   &-catalog
     display: flex
-    justify-content: space-between
-    flex-wrap: wrap
-    max-width: 1000px
+    // justify-content: space-between
+    // flex-wrap: wrap
+    overflow-x: auto;
+    min-width: 100%
+    min-height: 200px
     align-item: center
     margin: 0 auto
+    padding-bottom: 35px
+  &-catalog::-webkit-scrollbar
+    height: 8px
+    padding: 10px
+  &-catalog::-webkit-scrollbar-thumb
+    background-color: red
+    border-radius: 50px
   &-card
     border: 1px solid #fff
-    margin: 20px
-    padding: 40px
+    margin-right: 20px
+    padding: 20px 40px
     text-align: center
     width: 200px
+    min-height: 200px
     cursor: pointer
     img
       margin: 15px 10px
@@ -45,21 +55,24 @@
   flex-wrap: wrap
 .service-radio-img
   img
-    max-width: 442px
-    max-height: 370px
+    max-width: 324px
+    max-height: 324px
 .service-radio-ul
-  width: 60%
+  border: 10px solid red;
+  padding: 30px;
+  max-width: 60%
+  margin-left: 5%
   ul
     li
       +lato(20px)
       margin-bottom: 10px
 p
-  margin: 20px
+  margin: 50px 10%
 .radio-logo-wrapper
   display: flex
   justify-content: space-between
   flex-wrap: wrap
-  max-width: 900px 
+  max-width: 790px 
   margin: 20px auto 
 .radio-logo
   display: flex
@@ -70,4 +83,6 @@ p
   height: 160px
   img
     max-width: 90%
-    max-height: 130px
+    max-height: 180px
+.service-brand
+  display: none
