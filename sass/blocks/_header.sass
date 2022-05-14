@@ -1,24 +1,27 @@
 .header
+  background-color: #000
   width: 100%
-  background: #000
+  height: 100px
+  color: #fff
   &-wrapper
     display: flex
     justify-content: space-between
     align-items: center
-    padding: 15px
-    a
-      font-family: 'Montserrat', sans-serif
-      font-weight: 600
-      text-decoration: none
-      color: #fff
+    padding: 10px
   &-logo
+    max-width: 200px
+    max-height: 78px
     img
-      height: 90px
+      height: 77px
   &-nav
     ul
       li
         display: inline
         margin: 10px
-  a:hover
-    color: red
-        
+a
+  +montserrat(18px)
+  font-weight: bold
+  color: #fff
+  text-decoration: none
+a:hover
+  color: red
