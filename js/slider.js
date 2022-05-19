@@ -14,3 +14,15 @@ const swiper = new Swiper('.swiper', {
     disableOnInteraction: false,
   },
 });
+document.getElementById('call-popup').addEventListener('click', showDiv);
+let myDiv = true
+function showDiv(){
+  let isShow = document.getElementById('service');
+  if(myDiv){
+    isShow.style.display = 'none';
+    myDiv = false;
+  } else{
+    isShow.style.display = 'block';
+    myDiv = true;
+  }
+}

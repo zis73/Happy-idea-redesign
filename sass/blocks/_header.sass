@@ -3,6 +3,8 @@
   width: 100%
   height: 100px
   color: #fff
+  position: fixed
+  order: 99
   &-wrapper
     display: flex
     justify-content: space-between
@@ -18,10 +20,36 @@
       li
         display: inline
         margin: 10px
-a
-  +montserrat(18px)
-  font-weight: bold
-  color: #fff
-  text-decoration: none
-a:hover
-  color: red
+    &-button
+      +montserrat(16px)
+      color: #fff
+      background-color: inherit
+      margin-right: 20px
+    &-button:hover
+      color: red
+  &-call
+    display: flex
+    justify-content: space-between
+  &-button
+    color: #fff
+    +montserrat(10px)
+    background-color: inherit
+    border: 4px solid #fff
+    border-radius: 50px
+    padding: 8px
+    margin-right: 20px
+  a
+    +montserrat(18px)
+    font-weight: bold
+    color: #fff
+    text-decoration: none
+    margin-bottom: 2px
+  a:hover
+    color: red
+  &-button:hover
+    border: 4px solid red
+    a:hover
+      color: inherit
+  &-phone
+    display: flex
+    flex-direction: column

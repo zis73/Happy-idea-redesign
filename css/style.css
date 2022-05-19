@@ -609,6 +609,8 @@ body a {
   width: 100%;
   height: 100px;
   color: #fff;
+  position: fixed;
+  order: 99;
 }
 
 .header-wrapper {
@@ -632,23 +634,68 @@ body a {
   margin: 10px;
 }
 
-a {
+.header-nav-button {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: inherit;
+  margin-right: 20px;
+}
+
+.header-nav-button:hover {
+  color: red;
+}
+
+.header-call {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-button {
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: inherit;
+  border: 4px solid #fff;
+  border-radius: 50px;
+  padding: 8px;
+  margin-right: 20px;
+}
+
+.header a {
   font-family: Montserrat, sans-serif;
   font-size: 18px;
   font-weight: bold;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
+  margin-bottom: 2px;
 }
 
-a:hover {
+.header a:hover {
   color: red;
 }
 
+.header-button:hover {
+  border: 4px solid red;
+}
+
+.header-button:hover a:hover {
+  color: inherit;
+}
+
+.header-phone {
+  display: flex;
+  flex-direction: column;
+}
+
 .hello {
-  background-image: url("../img/fon/hello.png");
+  background-image: url("../img/fon/logo.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: right;
   height: 100vh;
 }
 
@@ -744,6 +791,10 @@ a:hover {
 
 .services-card:hover {
   border: 2px solid red;
+}
+
+a:hover {
+  color: inherit;
 }
 
 .service-wrapper {
