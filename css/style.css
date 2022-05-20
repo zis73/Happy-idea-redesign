@@ -345,6 +345,14 @@ template {
   border: 0;
 }
 
+body {
+  background-image: url("../img/fon/back-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
 body h1 {
   font-family: Montserrat, sans-serif;
   font-size: 68px;
@@ -509,6 +517,91 @@ body a {
 
 .swiper-swiper-button-prev {
   margin: -50px;
+}
+
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-title {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.modal-dialog {
+  top: 50%;
+  left: 50%;
+  max-width: 478px;
+  transform: translate(-50%, -50%);
+  padding: 33px 88px;
+  background-color: #000;
+  border-radius: 8px;
+  z-index: 101;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-input {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 0 23px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.modal-message {
+  width: 100%;
+  min-height: 123px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 18px 23px;
+  border: none;
+  flex-basis: 100%;
+  margin-bottom: 23px;
+}
+
+.modal-button {
+  margin-top: 35px;
+  margin-right: 25px;
+  padding: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  border: 3px solid Black;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.modal-button a {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  font-weight: 800;
+  color: #000;
+  letter-spacing: 2px;
+}
+
+.clients {
+  background-color: #fff;
 }
 
 .clients-wrapper {
@@ -692,19 +785,11 @@ body a {
 }
 
 .hello {
-  background-image: url("../img/fon/logo.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
   height: 100vh;
 }
 
 .hello-wrapper {
   padding-top: 150px;
-}
-
-.hello-title span {
-  color: red;
 }
 
 .hello-desc {
@@ -817,7 +902,6 @@ a:hover {
 }
 
 .service-ul {
-  border: 10px solid red;
   padding: 30px;
   max-width: 60%;
   margin-left: 5%;
