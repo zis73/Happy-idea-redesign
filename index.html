@@ -26,7 +26,7 @@
       </div>
       <!-- /.header-nav -->
       <div class="header-call">
-        <button class="header-button" id="call-popup">
+        <button class="header-button" id="myBtnHeader">
           ОСТАВИТЬ ЗАЯВКУ
         </button>
         <!-- /.hello-button -->
@@ -52,12 +52,16 @@
           <h2>в Москве и Московской области</h2>
         </div>
         <!-- /.hello-h2 -->
-        <button class="hello-button">
-          <a href="#contacts">ОСТАВИТЬ ЗАЯВКУ</a>
+        <button class="hello-button" id="myBtn">
+          ОСТАВИТЬ ЗАЯВКУ
         </button>
         <!-- /.hello-button -->
       </div>
       <!-- /.hello-wrapper -->
+      <!-- <div class="hello-img">
+      <img src="img/logo/logo-png.png" alt="logo:happy idea">
+    </div> -->
+    <!-- /.hello-img -->
     </div>
     <!-- /.container -->
   </div>
@@ -485,13 +489,13 @@
     <!-- /.contacts-wrapper -->
     <!-- </div> -->
   <!-- /.contacts -->
-  <div class="modal">
+  <div class="modal" id="myModal">
     <div class="modal-overlay"></div>
     <!-- /.modal-overlay -->
     <div class="modal-dialog">
-      <a href="#" class="modal-close">
+      <button id="myClose" class="modal-close">
         <img src="img/icons/close.svg" alt="icon:close">
-      </a>
+      </button>
       <h3 class="modal-title">Отправьте заявку</h3>
       <!-- /.modal-title -->
       <form action="#" method="POST" class="modal-form">

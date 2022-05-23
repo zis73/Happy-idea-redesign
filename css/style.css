@@ -364,7 +364,7 @@ body h2 {
   font-size: 48px;
   font-weight: bold;
   display: table;
-  border-bottom: 4px solid red;
+  border-bottom: 4px solid #b60877;
 }
 
 body h3 {
@@ -492,6 +492,10 @@ body a {
   font-style: normal;
 }
 
+.works {
+  z-index: 1;
+}
+
 .swiper {
   max-width: 870px;
   max-height: 660px;
@@ -519,16 +523,20 @@ body a {
   margin: -50px;
 }
 
+.modal {
+  display: none;
+}
+
 .modal-overlay {
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 143, 223, 0.39);
+  background-color: rgba(223, 0, 138, 0.39);
   z-index: 100;
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  transition: .3s all;
 }
 
 .modal-title {
@@ -537,17 +545,19 @@ body a {
 }
 
 .modal-dialog {
+  position: fixed;
   top: 50%;
   left: 50%;
   max-width: 478px;
   transform: translate(-50%, -50%);
   padding: 33px 88px;
+  margin-top: 50px;
   background-color: #000;
   border-radius: 8px;
   z-index: 101;
   color: #fff;
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  transition: .3s all;
 }
 
 .modal-close {
@@ -556,6 +566,7 @@ body a {
   top: 17px;
   text-decoration: none;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .modal-input {
@@ -580,9 +591,9 @@ body a {
 }
 
 .modal-button {
-  margin-top: 35px;
-  margin-right: 25px;
-  padding: 30px;
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   border: 3px solid Black;
@@ -737,7 +748,7 @@ body a {
 }
 
 .header-nav-button:hover {
-  color: red;
+  color: #bf2285;
 }
 
 .header-call {
@@ -768,11 +779,11 @@ body a {
 }
 
 .header a:hover {
-  color: red;
+  color: #b60877;
 }
 
 .header-button:hover {
-  border: 4px solid red;
+  border: 4px solid #b60877;
 }
 
 .header-button:hover a:hover {
@@ -785,6 +796,10 @@ body a {
 }
 
 .hello {
+  background-image: url("../img/logo/logo-png.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
   height: 100vh;
 }
 
@@ -844,7 +859,7 @@ body a {
 }
 
 .services-wrapper::-webkit-scrollbar-thumb {
-  background-color: red;
+  background-color: #b60877;
   border-radius: 50px;
 }
 
@@ -875,7 +890,7 @@ body a {
 }
 
 .services-card:hover {
-  border: 2px solid red;
+  border: 2px solid #b60877;
 }
 
 a:hover {
