@@ -7,21 +7,21 @@
   <link rel="stylesheet" href="css/style.css">
   <link
   rel="stylesheet"
-  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-/>
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <title>Happy Idea</title>
 </head>
 <body>
   <header class="header">
     <div class="header-wrapper">
       <div class="header-logo">
-        <img src="img/logo/nav_logo.png" alt="">
+        <button class="header-nav-button" data-id="hello"><img src="img/logo/nav_logo.png" alt=""></button>
       </div>
       <!-- /.header-logo -->
       <div class="header-nav">
-        <button class="header-nav-button" id="services">НАШИ УСЛУГИ</button>
-        <button class="header-nav-button" id="company">О КОМПАНИИ</button>
-        <button class="header-nav-button" id="works">НАШИ РАБОТЫ</button>
+        <button class="header-nav-button" data-id="services">НАШИ УСЛУГИ</button>
+        <button class="header-nav-button" data-id="company">О КОМПАНИИ</button>
+        <button class="header-nav-button" data-id="works">НАШИ РАБОТЫ</button>
 
       </div>
       <!-- /.header-nav -->
@@ -40,22 +40,23 @@
     </div>
     <!-- /.header-wrapper -->
   </header>
-  <div class="hello">
+  <div class="hello visible" data-id="hello">
     <div class="container">
       <div class="hello-wrapper">
-        <div class="hello-title">
-          <h1>Рекламная компания</h1>
-          <h1><span>HAPPY IDEA</span></h1>
-        </div>
-        <!-- /.hello-title -->
-        <div class="hello-desc">
-          <h2>в Москве и Московской области</h2>
-        </div>
-        <!-- /.hello-h2 -->
-        <button class="hello-button" id="myBtn">
-          ОСТАВИТЬ ЗАЯВКУ
-        </button>
-        <!-- /.hello-button -->
+        .hello-text
+          <div class="hello-title">
+            <h1>Рекламная компания</h1>
+            <h1><span>HAPPY IDEA</span></h1>
+          </div>
+          <!-- /.hello-title -->
+          <div class="hello-desc">
+            <h2>в Москве и Московской области</h2>
+          </div>
+          <!-- /.hello-h2 -->
+          <button class="hello-button" id="myBtn">
+            ОСТАВИТЬ ЗАЯВКУ
+          </button>
+          <!-- /.hello-button -->
       </div>
       <!-- /.hello-wrapper -->
       <!-- <div class="hello-img">
@@ -66,44 +67,44 @@
     <!-- /.container -->
   </div>
   <!-- /.hello -->
-  <div class="services" id="services">
+  <div class="services" data-id="services">
     <div class="container">
       <div class="services-title">
         <a id="services"><h2>Мы предлагаем:</h2></a>
       </div>
       <!-- /.services-title -->
       <div class="services-wrapper">
-        <button class="services-card">
-          <img src="img/icons/video-player.png" alt="">
+        <button class="services-card" data-id="video">
+          <img src="img/icons/conference (1).png" alt="">
           <h4>Видеореклама</h4>
         </button>
         <!-- /.services-card -->
-        <button class="services-card">
+        <button class="services-card" data-id="branding">
           <img src="img/icons/branding.png" alt="">
           <h4>Брендирование</h4></button>
         <!-- /.services-card -->
-        <button class="services-card">
-          <img src="img/icons/signal.png" alt="">
+        <button class="services-card" data-id="radio">
+          <img src="img/icons/megaphone-menu.png" alt="">
           <h4>Реклама на радио</h4></button>
         <!-- /.services-card -->
-        <button class="services-card">
+        <button class="services-card" data-id="elevator">
           <img src="img/icons/elevator.png" alt="">
           <h4>Реклама в лифтах</h4></button>
         <!-- /.services-card -->
-        <button class="services-card">
-          <img src="img/icons/shipped.png" alt="">
+        <button class="services-card" data-id="transport">
+          <img src="img/icons/truck (1).png" alt="">
           <h4>Реклама на транспорте</h4></button>
         <!-- /.services-card -->
-        <button class="services-card">
+        <button class="services-card" data-id="billboard">
           <img src="img/icons/billboard.png" alt="">
           <h4>Наружная реклама</h4></button>
         <!-- /.services-card -->
-        <button class="services-card">
-          <img src="img/icons/megaphone.png" alt="">
+        <button class="services-card" data-id="blog">
+          <img src="img/icons/influencer-menu.png" alt="">
           <h4>Реклама у топовых блогеров</h4></button>
         <!-- /.services-card -->
-        <button class="services-card">
-          <img src="img/icons/printer.png" alt="">
+        <button class="services-card" data-id="printer">
+          <img src="img/icons/print (1).png" alt="">
           <h4>Полиграфия</h4></button>
         <!-- /.services-card -->
       </div>
@@ -113,11 +114,11 @@
   </div>
   <!-- /.services --> 
   <div class="service">
-    <div class="container">
+    <div class="container" data-id="radio">
       <h2>Реклама на Радио</h2>
       <div class="service-wrapper">
         <div class="service-img">
-          <img src="img/icons/radio.png" alt="">
+          <img src="img/icons/radio-block.png" alt="">
         </div>
         <!-- /.service-img -->
         <div class="service-ul">
@@ -151,11 +152,11 @@
       <!-- /.radio -->
     </div>
     <!-- /.container -->
-    <div class="container">
+    <div class="container" data-id="video">
       <h2>Видеореклама</h2>
       <div class="service-wrapper">
         <div class="service-img">
-          <img src="img/icons/video-marketing.png" alt="">
+          <img src="img/icons/conference.png" alt="">
         </div>
         <!-- /.service-img -->
         <div class="service-ul">
@@ -175,11 +176,11 @@
       </p>
     </div>
     <!-- /.container -->
-    <div class="container">
+    <div class="container" data-id="transport">
       <h2>Реклама на транспорте</h2>
       <div class="service-wrapper">
         <div class="service-img">
-          <img src="img/icons/bus.png" alt="">
+          <img src="img/icons/truck.png" alt="">
         </div>
         <!-- /.service-img -->
         <div class="service-ul">
@@ -196,11 +197,11 @@
       <p>Достоинство рекламы на любом виде транспорта – мобильность. Она позволяет привлечь целевую аудиторию со всех районов города и даже страны, если разместить ее на фуре или другом авто, осуществляющем междугородние перевозки. При этом затраты на рекламу окажутся существенно ниже, чем при размещении объявлений на стационарных конструкциях.</p>
     </div>
     <!-- /.container -->
-    <div class="container">
-      <h2>Реклама на транспорте</h2>
+    <div class="container" data-id="elevator">
+      <h2>Реклама в лифтах</h2>
       <div class="service-wrapper">
         <div class="service-img">
-          <img src="img/icons/bus.png" alt="">
+          <img src="img/icons/elevator-block.png" alt="">
         </div>
         <!-- /.service-img -->
         <div class="service-ul">
@@ -213,11 +214,17 @@
         <!-- /.service-ul -->
       </div>
       <!-- /.service-wrapper -->
-      <p>Реклама на транспорте включает в себя размещение информации как на наружных поверхностях, так и внутри транспортных средств.</p>
-      <p>Достоинство рекламы на любом виде транспорта – мобильность. Она позволяет привлечь целевую аудиторию со всех районов города и даже страны, если разместить ее на фуре или другом авто, осуществляющем междугородние перевозки. При этом затраты на рекламу окажутся существенно ниже, чем при размещении объявлений на стационарных конструкциях.</p>
+      <p>Реклама в лифтах – один из видов внутренней рекламы, который позволяет прямо контактировать с потребителем.
+        Благодаря рекламе в лифтах можно привлекать интерес потенциальных клиентов конкретных жилых массивов, раскручивая торговые точки данного района.</p>
+      <p>Стоит отметить, что с помощью рекламных средств в лифтах можно охватывать тех потребителей, которые не слушают радио, не смотрят телевидение, не читают прессу.</p>
+
+      <p>Каждый человек использует подъемную кабину минимально два раза в день, то рекламная информация в ней предоставит возможность получить максимальный эффект – в основном 2 контакта за сутки.</p>
+        
+      <p> В подъемных кабинах отсутствуют отвлекающие элементы, то рекламная информация, которая расположена там, имеет высокий процент запоминания, чем когда она демонстрируется по иным информационным каналам.</p>
+      <p> Рекламные сведения, расположены в лифтах и очень оперативны. Размещение объявления в лифте можно сделать довольно быстро. Это особенно важно, когда осуществляются акции, рекламные кампании по стимулированию продаж.</p>
     </div>
     <!-- /.container -->
-    <div class="container">
+    <div class="container" data-id="branding">
       <h2>Брендирование</h2>
       <div class="service-wrapper">
         <div class="service-img">
@@ -239,17 +246,16 @@
         <!-- /.service-ul -->
       </div>
       <!-- /.service-wrapper -->
-      <p>Брендирование — это одно из направлений рекламы, которое работает на улучшение имиджа компании, путем нанесения рекламной информации на различные поверхности (транспорт, витрины, оборудование). Наиболее популярным является брендирование автотранспорта. Компании наносят логотипы своей фирмы на собственный автопарк. Так, в городе часто можно увидеть курьера, на машине которого логотип фирмы, предлагающей доставку пиццы и так далее. Еще один вариант — это размещение рекламы на автобусах, трамваях, маршрутных такси. Фирма размещает рекламу своей компании на общественном транспорте, что дает хорошую возможность привлечения новых клиентов. Другой нишей является нанесении рекламы на витрины, промо-стойки.
-        Брендирование — это одно из направлений рекламы, которое работает на улучшение имиджа компании, путем нанесения рекламной информации на различные поверхности (транспорт, витрины, оборудование). Наиболее популярным является брендирование автотранспорта. Компании наносят логотипы своей фирмы на собственный автопарк. Так, в городе часто можно увидеть курьера, на машине которого логотип фирмы, предлагающей доставку пиццы и так далее. Еще один вариант — это размещение рекламы на автобусах,  маршрутных такси. Фирма размещает рекламу своей компании на общественном транспорте, что дает хорошую возможность привлечения новых клиентов. 
-        Другой нишей является нанесении рекламы на витрины, промо-стойки.  Еще, вы часто замечаете логотип фирмы на канцелярских принадлежностях, бланках и т.п. Получая фирменную ручку, блокнот или зажигалку, вы постоянно имеете знак напоминания о том, услугой чьей фирмы вы воспользовались, или чью продукцию приобрели.</p>
+      <p>Брендирование — это одно из направлений рекламы, которое работает на улучшение имиджа компании, путем нанесения рекламной информации на различные поверхности (транспорт, витрины, оборудование). Наиболее популярным является брендирование автотранспорта. Компании наносят логотипы своей фирмы на собственный автопарк. Так, в городе часто можно увидеть курьера, на машине которого логотип фирмы, предлагающей доставку пиццы и так далее. Еще один вариант — это размещение рекламы на автобусах, трамваях, маршрутных такси. Фирма размещает рекламу своей компании на общественном транспорте, что дает хорошую возможность привлечения новых клиентов. Другой нишей является нанесении рекламы на витрины, промо-стойки.</p>
+      <p>Другой нишей является нанесении рекламы на витрины, промо-стойки.  Еще, вы часто замечаете логотип фирмы на канцелярских принадлежностях, бланках и т.п. Получая фирменную ручку, блокнот или зажигалку, вы постоянно имеете знак напоминания о том, услугой чьей фирмы вы воспользовались, или чью продукцию приобрели.</p>
 
     </div>
     <!-- /.container -->
-    <div class="container">
+    <div class="container" data-id="billboard">
       <h2>Наружная реклама</h2>
       <div class="service-wrapper">
         <div class="service-img">
-          <img src="img/icons/bus-stop (1).png" alt="">
+          <img src="img/icons/billboard-block.png" alt="">
         </div>
         <!-- /.service-img -->
         <div class="service-ul">
@@ -265,7 +271,7 @@
       <p>Наружная реклама — самый популярный вид продвижения товаров и услуг не только на рынке СНГ, но и во всем мире. Она часто называется «аутдоор» (от англ. outdoor — находящаяся на открытом воздухе).</p>
     </div>
     <!-- /.container -->
-    <div class="container">
+    <div class="container" data-id="blog">
       <h2>Реклама у топовых блогеров</h2>
       <div class="service-wrapper">
         <div class="service-img">
@@ -284,14 +290,14 @@
       </div>
       <!-- /.service-wrapper -->
       <p>Растущая популярность такого инструмента продвижения, как реклама у блогеров, бесспорно, заслуживает внимания к нему со стороны маркетологов и бизнесменов.</p>
-      <p>Через блоги успешно продвигаются многие b2cтовары и сервисы, интернет-магазины, рестораны и бары, fashion-бренды, хэнд-мэйд мастера, частные специалисты. Сейчас в блогах можно встретить рекламу как небольших стартапов, так и огромных супер-успешных брендов.</p>
+      <p>Через блоги успешно продвигаются многие b2c товары и сервисы, интернет-магазины, рестораны и бары, fashion-бренды, хэнд-мэйд мастера, частные специалисты. Сейчас в блогах можно встретить рекламу как небольших стартапов, так и огромных супер-успешных брендов.</p>
     </div>
     <!-- /.container -->
-    <div class="container">
+    <div class="container" data-id="printer">
       <h2>Полиграфия</h2>
       <div class="service-wrapper">
         <div class="service-img">
-          <img src="img/icons/multifunction-printer.png" alt="">
+          <img src="img/icons/print.png" alt="">
         </div>
         <!-- /.service-img -->
         <div class="service-ul">
@@ -310,7 +316,7 @@
     <!-- /.container -->
   </div>
   <!-- /.service -->
-  <div class="works" id="works">
+  <div class="works" data-id="works">
     <div class="container">
         <h2>Наши работы:</h2>
       <!-- /.adv-title -->
@@ -400,7 +406,7 @@
     </div>
     <!-- /.container -->
   </div>
-  <div class="company" id="company">
+  <div class="company" id="company" data-id="company">
     <div class="container">
       <h2 id="company">О нас</h2>
       <div class="company-wrapper">
@@ -418,43 +424,41 @@
         <p>О вас узнают, услышат и обязательно запомнят!</p>
       </div>
       <!-- /.company-wrapper -->
+      <div class="clients">
+            <h2>Нам доверяют</h2>
+            <div class="clients-wrapper">
+              <div class="clients-logo"><img src="img/clients/1.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/2.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/3.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/4.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/5.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/6.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/7.jpg" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/8.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/9.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/10.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/11.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/12.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/13.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/14.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/15.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/16.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/17.jpg" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/18.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/19.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/20.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/21.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/22.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/23.png" alt=""></div>
+              <div class="clients-logo"><img src="img/clients/24.png" alt=""></div>
+            </div>
+            <!-- /.clients-wrapper -->
+      </div>
     </div>
     <!-- /.container -->
   </div>
   <!-- /.company -->
-  <div class="clients">
-    <div class="container">
-        <h2>Нам доверяют</h2>
-        <div class="clients-wrapper">
-          <div class="clients-logo"><img src="img/clients/1.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/2.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/3.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/4.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/5.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/6.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/7.jpg" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/8.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/9.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/10.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/11.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/12.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/13.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/14.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/15.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/16.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/17.jpg" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/18.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/19.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/20.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/21.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/22.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/23.png" alt=""></div>
-          <div class="clients-logo"><img src="img/clients/24.png" alt=""></div>
-        </div>
-        <!-- /.clients-wrapper -->
-    </div>
-    <!-- /.container -->
-  </div>
+
   <!-- /.clients -->
   <!-- <div class="contacts" id="contacts">
   </div class="container">
@@ -513,5 +517,6 @@
   <!-- /.modal -->
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/tabs.js"></script>
 </body>
 </html>

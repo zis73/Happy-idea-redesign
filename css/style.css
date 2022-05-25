@@ -611,12 +611,12 @@ body a {
   letter-spacing: 2px;
 }
 
-.clients {
-  background-color: #fff;
-}
-
 .clients-wrapper {
+  padding: 15px;
+  border: 10px inset #bf2285;
+  background-color: #fff;
   margin: 20px auto;
+  padding: 5px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -638,7 +638,6 @@ body a {
 }
 
 .company {
-  background-color: #000;
   color: #fff;
 }
 
@@ -713,8 +712,12 @@ body a {
   width: 100%;
   height: 100px;
   color: #fff;
-  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   order: 99;
+  border-bottom: 4px solid #bf2285;
 }
 
 .header-wrapper {
@@ -796,15 +799,11 @@ body a {
 }
 
 .hello {
-  background-image: url("../img/logo/logo-png.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-  height: 100vh;
+  height: 90vh;
 }
 
 .hello-wrapper {
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .hello-desc {
@@ -952,6 +951,22 @@ a:hover {
 .radio-logo img {
   max-width: 90%;
   max-height: 180px;
+}
+
+.service .container[data-id] {
+  display: none;
+}
+
+.service .container.visible {
+  display: block;
+}
+
+.services[data-id], .hello[data-id], .company[data-id], .works[data-id] {
+  display: none;
+}
+
+.services.visible, .hello.visible, .company.visible, .works.visible {
+  display: block;
 }
 
 @media only screen and (max-width: 1252px) {
