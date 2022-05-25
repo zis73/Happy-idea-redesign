@@ -660,8 +660,12 @@ body a {
 }
 
 .company-logo {
-  max-width: 700px;
+  max-width: 450px;
   margin: 20px auto;
+}
+
+.company-logo img {
+  width: 100%;
 }
 
 .contacts-wrapper {
@@ -732,12 +736,18 @@ body a {
 }
 
 .header-logo {
-  max-width: 200px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
   max-height: 78px;
 }
 
 .header-logo img {
   height: 77px;
+}
+
+.header-logo h3 {
+  font-size: 26px;
 }
 
 .header-nav ul li {
