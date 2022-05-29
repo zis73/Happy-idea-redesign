@@ -2,7 +2,8 @@
 
 @media only screen and (max-width: 1252px)
   .hello
-    background-position: right 35% bottom 45%; 
+    // margin: 80px auto
+    height: 50vh
     &-wrapper
       padding-top: 50px
     &-title
@@ -14,6 +15,12 @@
     &-button
       padding: 22px
 @media only screen and (max-width: 1148px)
+  .header
+    .text
+      font-size: 18px
+    &-call
+      a
+        font-size: 14px
   .hello
     background-position: right 35% bottom 45%; 
     &-wrapper
@@ -35,18 +42,43 @@
       ul
         li
           font-size: 18px
+  .company
+    &-logo
+      width: 400px
 @media only screen and (max-width: 768px)
   body
     h2
       font-size: 40px
+  .header
+    &-wrapper
+      flex-wrap: wrap
+      margin: 0 auto
+    &-logo
+      width: 100%
+      // flex-basis: 100%
+      // margin-left: 20%
+      // margin-bottom: 10px
+      justify-content: center
+      margin-bottom: 15px
+    &-nav
+      // margin-left: 20%
+      margin: 0 auto
+      &-button
+        font-size: 12px
+    &-call
+      display: none
   .hello
     height: 90vh 
     &-title
       h1
-        font-size: 42px
+        font-size: 38px
     &-desc
       h2
         font-size: 34px
+        text-decoration: 4px underline #b60877
+        border-bottom: none
+    &-logo
+      width: 300px
     &-button
       padding: 20px
       a
@@ -60,10 +92,10 @@
       &-img
         width: 100%
       &-ul
-        max-width: 50%
+        max-width: 100%
         ul
           li
-            font-size: 14px
+            font-size: 18px
   .radio
     &-logo
       width: 160px
@@ -75,8 +107,7 @@
     p
       font-size: 20px
     &-logo
-      img
-        width: 520px
+      width: 300px
   .clients-logo
     width: 160px
   .contacts-map
@@ -86,12 +117,24 @@
   body
     h2
       font-size: 34px
-  .header-nav, .header-phone
-    display: none
+  .header-nav
+    a
+      font-size: 9px
   .hello
+    &-wrapper
+      flex-wrap: wrap
+      padding-top: 5px
+    &-logo
+      width: 300px
+    &-title
+      h1
+        font-size: 24px
+    &-desc
+      h2
+        font-size: 20px
     &-button
       padding: 14px
-      margin: 10px 0
+      margin: 20px 20%
       a
         +montserrat(14px)
         font-weight: 800
@@ -102,10 +145,12 @@
     &-img
         width: 180px
     &-ul
-      max-width: 80%
+      max-width: 100%
       ul
+        display: flex
+        justify-content: space-between
         li
-          font-size: 12px
+          font-size: 14px
   .company
     h3
       font-size: 24px

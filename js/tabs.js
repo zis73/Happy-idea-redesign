@@ -7,7 +7,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-	$('button.header-nav-button').on('click', function() {
+	$('a.header-nav-button').on('click', function() {
 		let obj2 = $(this);
 		$('.services, .hello, .company, .works, .contacts').removeClass('visible');
 		$('.company[data-id="' + obj2.attr('data-id') + '"]').addClass('visible');

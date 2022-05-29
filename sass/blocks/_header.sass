@@ -1,7 +1,7 @@
 .header
   background-color: #000
   width: 100%
-  height: 100px
+  max-height: 200px
   color: #fff
   // position: fixed
   top: 0
@@ -18,13 +18,10 @@
   &-logo
     display: flex
     align-items: center
-    max-width: 600px
+    // max-width: 600px
     max-height: 78px
     img
       height: 77px
-    h3
-      font-size: 26px
-
   &-nav
     ul
       li
@@ -35,6 +32,7 @@
       color: #fff
       background-color: inherit
       margin-right: 20px
+      cursor: pointer
     &-button:hover
       color: #bf2285
   &-call
@@ -48,12 +46,14 @@
     border-radius: 50px
     padding: 8px
     margin-right: 20px
+    cursor: pointer
   a
     +montserrat(18px)
     font-weight: bold
     color: #fff
     text-decoration: none
     margin-bottom: 2px
+    cursor: pointer
   a:hover
     color: #b60877
   &-button:hover
@@ -63,3 +63,5 @@
   &-phone
     display: flex
     flex-direction: column
+  .text
+      font-size: 26px

@@ -1,11 +1,16 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
+  autoHeight: true,
   loop: true,
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: false,
   },
   spaceBetween: 30,
   centeredSlides: true,
@@ -32,6 +37,7 @@ var modal = document.getElementById("myModal");
 
 // Получить кнопку, которая открывает модальный
 var btn = document.getElementById("myBtn");
+var btnContacts = document.getElementById("myBtnContacts");
 var btnHeader = document.getElementById("myBtnHeader");
 
 // Получить элемент <span>, который закрывает модальный
@@ -42,6 +48,9 @@ btn.onclick = function() {
   modal.style.display = "block";    
 }
 btnHeader.onclick = function() {
+  modal.style.display = "block";    
+}
+btnContacts.onclick = function() {
   modal.style.display = "block";    
 }
 // Когда пользователь нажимает на <span> (x), закройте модальное окно
