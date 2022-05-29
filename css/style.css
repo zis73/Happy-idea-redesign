@@ -684,7 +684,6 @@ body a {
 }
 
 .contacts-call {
-  max-width: 50%;
   margin: 30px auto;
   display: flex;
   flex-flow: column;
@@ -705,8 +704,6 @@ body a {
 
 .contacts-button {
   color: #000;
-  margin-top: 15px;
-  margin-right: 25px;
   padding: 30px;
   font-family: Montserrat, sans-serif;
   font-size: 24px;
@@ -1135,6 +1132,10 @@ a:hover {
   .contacts-map {
     display: none;
   }
+  .contacts-call {
+    font-size: 40px;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 429px) {
@@ -1142,7 +1143,10 @@ a:hover {
     font-size: 34px;
   }
   .header-nav a {
-    font-size: 9px;
+    font-size: 11px;
+  }
+  .header-nav-button {
+    margin-right: 10px;
   }
   .hello-wrapper {
     flex-wrap: wrap;
@@ -1190,7 +1194,7 @@ a:hover {
     font-size: 20px;
   }
   .company-logo img {
-    width: 350px;
+    width: 300px;
   }
   .clients-wrapper {
     margin-left: 0;
