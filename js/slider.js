@@ -19,7 +19,28 @@ const swiper = new Swiper('.swiper', {
     disableOnInteraction: false,
   },
 });
-
+const swiper2 = new Swiper('.swiper2', {
+  // Optional parameters
+  direction: 'horizontal',
+  autoHeight: true,
+  loop: true,
+  slidesPerView: 5,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: false,
+  },
+  spaceBetween: 30,
+  centeredSlides: true,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+});
 // document.getElementById('call-popup').addEventListener('click', showDiv);
 // let myDiv = true
 // function showDiv(){

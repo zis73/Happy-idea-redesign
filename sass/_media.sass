@@ -31,6 +31,8 @@
     &-desc
       h2
         font-size: 46px
+        text-decoration: 4px underline #b60877
+        border-bottom: none
     &-button
       padding: 22px
       a
@@ -41,7 +43,7 @@
       max-width: 40%
       ul
         li
-          font-size: 18px
+          font-size: 28px
   .company
     &-logo
       width: 400px
@@ -95,12 +97,10 @@
         max-width: 100%
         ul
           li
-            font-size: 18px
+            font-size: 28px
   .radio
     &-logo
       width: 160px
-  .swiper
-    display: none
   .company
     h3
       font-size: 30px
@@ -116,7 +116,11 @@
     &-call
       font-size: 40px
       width: 100%
-
+  .swiper
+    width: 90%
+    &-button-prev::after,
+    &-button-next::after
+      font-size: 50px
 @media only screen and (max-width: 429px)
   body
     h2
@@ -134,7 +138,7 @@
       width: 300px
     &-title
       h1
-        font-size: 24px
+        font-size: 44px
     &-desc
       h2
         font-size: 20px
@@ -146,7 +150,7 @@
         font-weight: 800
   .services-card
     h4
-      font-size: 16px
+      font-size: 15px
   .service
     &-img
         width: 180px
@@ -155,8 +159,10 @@
       ul
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
+        flex-direction: column
         li
-          font-size: 14px
+          font-size: 24px
   .company
     h3
       font-size: 24px
@@ -170,6 +176,10 @@
   .clients-logo
     width: 110px
     height: 80px 
+  .contacts
+    &-social
+      a
+        padding: 24px
 @media only screen and (max-width: 328px)
   body
     h2
