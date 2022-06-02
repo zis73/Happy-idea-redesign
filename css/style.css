@@ -992,6 +992,99 @@ a:hover {
   max-height: 180px;
 }
 
+.thank-header {
+  background-color: #000;
+  width: 100%;
+  max-height: 100px;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  order: 99;
+  border-bottom: 4px solid #bf2285;
+}
+
+.thank-header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.thank-header-logo {
+  display: flex;
+  align-items: center;
+  max-height: 78px;
+}
+
+.thank-header-logo img {
+  height: 77px;
+}
+
+.thank-header-nav-button {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: inherit;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.thank-header-nav-button:hover {
+  color: #bf2285;
+}
+
+.thank-header a {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.thank-header a:hover {
+  color: #b60877;
+}
+
+.thank-header-button {
+  margin-top: 35px;
+  margin-right: 25px;
+  padding: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  border: 3px solid Black;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.thank-header-button:hover {
+  border: 4px solid #b60877;
+}
+
+.thank-header-button:hover a:hover {
+  color: inherit;
+}
+
+.thank-header .text {
+  font-size: 26px;
+}
+
+.thank {
+  padding-top: 100px;
+}
+
+.thank-wrapper h2 {
+  padding-top: 50px;
+  border-bottom: none;
+}
+
 .service .container[data-id] {
   display: none;
 }
@@ -1154,6 +1247,9 @@ a:hover {
   .swiper-button-prev::after, .swiper-button-next::after {
     font-size: 40px;
   }
+  .thank h2 {
+    font-size: 34px;
+  }
 }
 
 @media only screen and (max-width: 429px) {
@@ -1231,6 +1327,17 @@ a:hover {
   }
   .modal-close {
     right: 38px;
+  }
+  .thank h2 {
+    font-size: 20px;
+  }
+  .thank-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .thank a {
+    margin: 0 auto;
   }
 }
 

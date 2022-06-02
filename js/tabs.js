@@ -9,11 +9,13 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$('a.header-nav-button').on('click', function() {
 		let obj2 = $(this);
-		$('.services, .hello, .company, .works, .contacts').removeClass('visible');
+		$('.services, .hello, .company, .works, .contacts, .thank').removeClass('visible');
 		$('.company[data-id="' + obj2.attr('data-id') + '"]').addClass('visible');
 		$('.hello[data-id="' + obj2.attr('data-id') + '"]').addClass('visible');
 		$('.services[data-id="' + obj2.attr('data-id') + '"]').addClass('visible');
 		$('.service .container').removeClass('visible');
+		$('.thank[data-id="' + obj2.attr('data-id') + '"]').addClass('visible');
+		$('.thank .container').removeClass('visible');
 		$('.works[data-id="' + obj2.attr('data-id') + '"]').addClass('visible');
 		$('.contacts[data-id="' + obj2.attr('data-id') + '"]').addClass('visible');
 		// $('.works .swiper[data-id="' + obj2.attr('data-id') + '"]').addClass('visible');
