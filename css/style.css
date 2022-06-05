@@ -1135,6 +1135,9 @@ a:hover {
   .header-call a {
     font-size: 14px;
   }
+  .header a {
+    font-size: 14px;
+  }
   .hello {
     background-position: right 35% bottom 45%;
   }
@@ -1172,6 +1175,9 @@ a:hover {
 @media only screen and (max-width: 768px) {
   body h2 {
     font-size: 40px;
+  }
+  .header {
+    height: 144px;
   }
   .header-wrapper {
     flex-wrap: wrap;

@@ -27,7 +27,7 @@ $body = "
 <b>Сообщение:</b> $message";
 try {
     //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
     $mail->CharSet = "UTF-8";
     $mail->Host       = 'smtp.mail.ru';                     //Set the SMTP server to send through
