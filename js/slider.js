@@ -1,7 +1,6 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  autoHeight: true,
   loop: true,
   // Navigation arrows
   navigation: {
