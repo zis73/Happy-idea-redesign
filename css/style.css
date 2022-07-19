@@ -1375,6 +1375,9 @@ a:hover {
   .hello-desc h2 {
     font-size: 34px;
   }
+  .hello .modal-close {
+    right: 95px;
+  }
   .hello-button {
     padding: 14px;
     margin: 10px 0;
