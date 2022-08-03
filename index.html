@@ -23,6 +23,7 @@
   rel="stylesheet"
   href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <title>Happy Idea</title>
 </head>
 <body>
@@ -456,7 +457,7 @@
           <img src="img/logo/nav_logo.png" alt="">
         </div>
         <!-- /.company-logo -->
-        <p>Вкусная подача и качественное исполнение рекламного продукта под вас-наша основная задача! Интересные предложения по размещению вашего бизнеса в общественном пригородном транспорте, на радио, телевидении и в широкой офлайн среде.</p>  
+        <p>Вкусная подача и качественное исполнение рекламного продукта - наша основная задача! Интересные предложения по размещению вашего бизнеса в общественном пригородном транспорте, на радио, телевидении и в широкой офлайн среде.</p>  
         <p>Приглашаем вас к сотрудничеству на взаимовыгодных условиях по демократичным ценам.
         </p>
         <p>О вас узнают, услышат и обязательно запомнят!</p>
@@ -540,6 +541,8 @@
         <input type="text" class="modal-input art-stranger" placeholder="Ваш телефон" name="phone" required>
         <input type="text" class="modal-input" placeholder="Город" name="city" required>
         <textarea type="text" class="modal-message" placeholder="Заинтересовавшая Вас услуга" name="message"></textarea>
+        <!-- <div class="g-recaptcha" data-sitekey="6Ld9wvogAAAAANzyMymwS-_idPoczBVMVTH4-eoq"></div>
+        <input type="hidden" name="secret" value="" id="secret"/> -->
         <button class="modal-button" type="submit">Отправить</button>
       </form>
       <!-- /.modal-form -->
@@ -567,10 +570,46 @@
       }
     };
     
-    
     $('input[type="tel"]').click(function(){
-        $(this).setCursorPosition(4);  // set position number
-      });
+    $(this).setCursorPosition(4);  // set position number
+    });
+    
+    let secret = document.querySelector('#secret');
+    document.querySelector('.modal-button').onclick = function(){
+      secret.value = 'secretkey';
+    }
+    </script>
+    <script>
+      // Работа с виджетом recaptcha
+// 1. Получить ответ гугл капчи
+var captcha = grecaptcha.getResponse();
+
+// 2. Если ответ пустой, то выводим сообщение о том, что пользователь не прошёл тест.
+// Такую форму не будем отправлять на сервер.
+if (!captcha.length) {
+  // Выводим сообщение об ошибке
+  $('#recaptchaError').text('* Вы не прошли проверку "Я не робот"');
+} else {
+  // получаем элемент, содержащий капчу
+  $('#recaptchaError').text('');
+}
+
+// 3. Если форма валидна и длина капчи не равно пустой строке, то отправляем форму на сервер (AJAX)
+if ((formValid) && (captcha.length)) {
+  ...
+  // добавить в formData значение 'g-recaptcha-response'=значение_recaptcha
+  formData.append('g-recaptcha-response', captcha);
+  ...
+}
+
+// 4. Если сервер вернул ответ error, то делаем следующее...
+// Сбрасываем виджет reCaptcha
+grecaptcha.reset();
+// Если существует свойство msg у объекта $data, то...
+if ($data.msg) {
+  // вывести её в элемент у которого id=recaptchaError
+  $('#recaptchaError').text($data.msg);
+}
     </script>
 </body>
 </html>
