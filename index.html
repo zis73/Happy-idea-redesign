@@ -536,18 +536,13 @@
       </button>
       <h3 class="modal-title">Отправить заявку</h3>
       <!-- /.modal-title -->
-      <form action="send.php" method="POST" class="modal-form" onsubmit="return function check() {
-        if (grecaptcha.getResponse() == '') {
-            alert('Please verify captcha details.');
-                return false;
-        }
-        return true;
-    }">
+      <form action="send.php" method="POST" class="modal-form" onsubmit="return check()">
         <input type="text" class="modal-input" placeholder="Ваше имя" name="name" required>
         <input type="text" class="modal-input art-stranger" placeholder="Ваш телефон" name="phone" required>
         <input type="text" class="modal-input" placeholder="Город" name="city" required>
         <textarea type="text" class="modal-message" placeholder="Заинтересовавшая Вас услуга" name="message"></textarea>
         <div class="g-recaptcha" data-sitekey="6Ld9wvogAAAAANzyMymwS-_idPoczBVMVTH4-eoq"></div>
+        <div id="#recaptchaError"></div>
         <button class="modal-button" type="submit">Отправить</button>
       </form>
       <!-- /.modal-form -->
@@ -587,34 +582,17 @@
     <script>
       // Работа с виджетом recaptcha
 // 1. Получить ответ гугл капчи
-var captcha = grecaptcha.getResponse();
-
-// 2. Если ответ пустой, то выводим сообщение о том, что пользователь не прошёл тест.
-// Такую форму не будем отправлять на сервер.
-if (!captcha.length) {
-  // Выводим сообщение об ошибке
-  $('#recaptchaError').text('* Вы не прошли проверку "Я не робот"');
-} else {
-  // получаем элемент, содержащий капчу
-  $('#recaptchaError').text('');
+function check() {
+  var captcha = grecaptcha.getResponse();
+  if (!captcha) {
+    alert('* Вы не прошли проверку "Я не робот"')
+    return false
+  } else {
+    $('#recaptchaError').text('');
+    return true
+  } 
 }
 
-// 3. Если форма валидна и длина капчи не равно пустой строке, то отправляем форму на сервер (AJAX)
-if ((formValid) && (captcha.length)) {
-  ...
-  // добавить в formData значение 'g-recaptcha-response'=значение_recaptcha
-  formData.append('g-recaptcha-response', captcha);
-  ...
-}
-
-// 4. Если сервер вернул ответ error, то делаем следующее...
-// Сбрасываем виджет reCaptcha
-grecaptcha.reset();
-// Если существует свойство msg у объекта $data, то...
-if ($data.msg) {
-  // вывести её в элемент у которого id=recaptchaError
-  $('#recaptchaError').text($data.msg);
-}
     </script>
 </body>
 </html>
