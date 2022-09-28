@@ -542,7 +542,6 @@
         <input type="text" class="modal-input" placeholder="Город" name="city" required>
         <textarea type="text" class="modal-message" placeholder="Заинтересовавшая Вас услуга" name="message"></textarea>
         <div class="g-recaptcha" data-sitekey="6Ld9wvogAAAAANzyMymwS-_idPoczBVMVTH4-eoq"></div>
-        <div id="#recaptchaError"></div>
         <button class="modal-button" type="submit">Отправить</button>
       </form>
       <!-- /.modal-form -->
@@ -588,7 +587,6 @@ function check() {
     alert('* Вы не прошли проверку "Я не робот"')
     return false
   } else {
-    $('#recaptchaError').text('');
     return true
   } 
 }
