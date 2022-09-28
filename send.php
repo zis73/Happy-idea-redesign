@@ -55,12 +55,10 @@ if (isset($_POST['g-recaptcha-response']) && $_POST['g-recaptcha-response']) {
             $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
         
             $mail->send();
+            header('Location: thanks.html');
             echo 'Message has been sent';
         } catch (Exception $e) {
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }
 	}
 }
-
-
-header('Location: thanks.html');
