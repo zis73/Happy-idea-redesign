@@ -536,7 +536,13 @@
       </button>
       <h3 class="modal-title">Отправить заявку</h3>
       <!-- /.modal-title -->
-      <form action="send.php" method="POST" class="modal-form">
+      <form action="send.php" method="POST" class="modal-form" onsubmit="return function check() {
+        if (grecaptcha.getResponse() == '') {
+            alert('Please verify captcha details.');
+                return false;
+        }
+        return true;
+    }">
         <input type="text" class="modal-input" placeholder="Ваше имя" name="name" required>
         <input type="text" class="modal-input art-stranger" placeholder="Ваш телефон" name="phone" required>
         <input type="text" class="modal-input" placeholder="Город" name="city" required>
